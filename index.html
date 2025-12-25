@@ -6,9 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="root">
-        <!-- Hello World using HTML -->
-        <h1>Hello World</h1>
-    </div>
+    <div id="root"></div>
 </body>
+<script>
+    //create the h1 tag
+    const heading = document.createElement("h1");
+    const root = document.getElementById("root");
+    heading.innerHTML = "Hello World from Javascript!";
+    root.appendChild(heading);
+</script>
 </html>
